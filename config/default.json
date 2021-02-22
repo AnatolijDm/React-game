@@ -1,4 +1,5 @@
 {
   "port": 8080,
-  "mongoURL": ""
+  "jwtSecret": "rock&roll",
+  "mongoURL": "mongodb+srv://Anatolij:268452@cluster0.c5tcf.mongodb.net/app?retryWrites=true&w=majority"
 }
