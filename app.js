@@ -5,6 +5,8 @@ const PORT = config.get('port') || 8080;
 
 const app = express();
 
+app.use(express.json({ extended: true }));
+
 app.use('/api/auth', require('./src/server/router'))
 
 async function start() {

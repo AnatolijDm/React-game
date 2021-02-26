@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.3",
+    "eslint": "^7.20.0",
     "express": "^4.17.1",
     "express-validator": "^6.9.2",
     "http-status-codes": "^2.1.4",
