@@ -4,10 +4,12 @@
   "description": "Full stack game",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "clientInstall": "npm install --prefix client",
+    "clientBuild": "npm run build  --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server --max-http-header-size=16384\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -31,12 +33,12 @@
     "eslint": "^7.20.0",
     "express": "^4.17.1",
     "express-validator": "^6.9.2",
-    "http-status-codes": "^2.1.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.17"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.7"
   }
 }

@@ -1,0 +1,6 @@
+{
+    "port": 5000,
+    "jwtSecret": "rock&roll",
+    "mongoURL": "mongodb+srv://Anatolij:268452@cluster0.c5tcf.mongodb.net/React-game?retryWrites=true&w=majority",
+    "BaseUrl": "http://localhost:5000/"
+  }
