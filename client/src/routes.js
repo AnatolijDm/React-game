@@ -1,24 +1,20 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { AuthPage } from './pages/AuthPage';
-import { CreatePage } from './pages/CreatePage';
-import { DetailPage } from './pages/DetailPage';
-import { LinksPage } from './pages/LinksPage';
+import { StartGamePage } from './pages/StartGamePage';
+import { ScorePage } from './pages/ScorePage';
 
 export const useRoutes = isAuthenticated => {
     if (isAuthenticated) {
         return (
             <Switch>
-                <Route path="/links" exact>
-                    <LinksPage />
+                <Route path="/start" exact>
+                    <StartGamePage />
                 </Route>
-                <Route path="/create" exact>
-                    <CreatePage />
+                <Route path="/score" exact>
+                    <ScorePage />
                 </Route>
-                <Route path="/detail/:id">
-                    <DetailPage />
-                </Route>
-                <Redirect to="/create" />
+                <Redirect to="/start" />
             </Switch>
         )
     }

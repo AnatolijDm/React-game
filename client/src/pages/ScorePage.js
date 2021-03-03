@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const LinksPage = () => {
+export const ScorePage = () => {
     return(
         <div>
-            <h1>Links Page</h1>
+            <h1>Score</h1>
         </div>
     )
 }

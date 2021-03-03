@@ -15,8 +15,8 @@ export const Navbar = ()  => {
             <div class="nav-wrapper">
             <a href="/" class="brand-logo">React-game</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><NavLink to="/create">Create</NavLink></li>
-                <li><NavLink to="/links">LINKS</NavLink></li>
+                <li><NavLink to="/start">Start game</NavLink></li>
+                <li><NavLink to="/score">See score</NavLink></li>
                 <li><a href="/" onClick={logoutHandler}>Logout</a></li>
             </ul>
             </div>

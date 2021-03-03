@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const DetailPage = () => {
+export const StartGamePage = () => {
     return(
         <div>
-            <h1>Detail Page</h1>
+            <h1>Start game</h1>
         </div>
     )
 }
